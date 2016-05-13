@@ -37,7 +37,7 @@ section {
       section ul li img {
         height: 30px;
         width: 30px;
-        margin: 5px;
+        margin: 7.5px;
         float: left; }
       section ul li h2, section ul li h3 {
         margin: 0;
@@ -48,6 +48,9 @@ section {
       section ul li h2 {
         font-size: 20px;
         line-height: 25px; }
+        section ul li h2:last-child {
+          font-size: 20px;
+          line-height: 45px; }
       section ul li h3 {
         font-size: 15px;
         line-height: 15px; }
