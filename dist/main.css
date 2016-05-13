@@ -45,13 +45,19 @@ section ul li img {
   margin: 5px;
   float: left;
 }
-section ul li h2 {
+section ul li h2,
+section ul li h3 {
   margin: 0;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section ul li h2 {
   font-size: 20px;
   line-height: 25px;
 }
 section ul li h3 {
-  margin: 0;
   font-size: 15px;
   line-height: 15px;
 }
