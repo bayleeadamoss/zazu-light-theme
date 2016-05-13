@@ -55,7 +55,7 @@
     <style>
       section {
         width: 600px;
-        height: 400px;
+        max-height: 400px;
         margin: 40px auto 0;
         box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.75);
         border-radius: 10px;
@@ -77,12 +77,14 @@
         jQuery('#zazu li.active').removeClass('active');
         jQuery(this).addClass('active');
       });
-      jQuery('input').on('keyup', function() {
+      jQuery('input').focus().on('keyup', function() {
         if (jQuery(this).val().length >= 1) {
           jQuery('section').addClass('filtered');
         } else {
           jQuery('section').removeClass('filtered');
         }
+        jQuery('#zazu li.active').removeClass('active');
+        jQuery('li:visible:eq(0)').addClass('active');
       });
     </script>
   </body>

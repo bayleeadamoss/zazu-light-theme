@@ -25,9 +25,8 @@ section {
     padding: 0;
     margin: 0;
     border-top: 1px solid #dedede;
-    height: 333px;
-    overflow: scroll;
-    border-radius: 0 0 10px 10px; }
+    max-height: 333px;
+    overflow: scroll; }
     section ul li {
       display: block;
       height: 45px;
