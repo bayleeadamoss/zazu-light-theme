@@ -1,14 +1,14 @@
-@main: #F7F7F7;
+$main: #F7F7F7;
 
 html, body {
-  background-color: @main;
+  background-color: $main;
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
 
 section {
-  background-color: darken(@main, 5%);
+  background-color: darken($main, 5%);
   background-image: data-uri('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ section {
   ul {
     padding: 0;
     margin: 0;
-    border-top: 1px solid darken(@main, 10%);
+    border-top: 1px solid darken($main, 10%);
     max-height: 333px;
     overflow: scroll;
 
@@ -38,7 +38,7 @@ section {
       display: block;
       height: 45px;
       line-height: 45px;
-      border-bottom: 1px solid darken(@main, 10%);
+      border-bottom: 1px solid darken($main, 10%);
       -webkit-app-region: no-drag;
       cursor: pointer;
 
@@ -68,7 +68,7 @@ section {
       }
 
       &.active {
-        background-color: darken(@main, 10%);
+        background-color: darken($main, 10%);
       }
     }
   }
