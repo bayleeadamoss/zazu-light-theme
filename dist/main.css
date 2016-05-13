@@ -44,7 +44,9 @@ section {
         padding-left: 10px;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        font-weight: 400;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
       section ul li h2 {
         font-size: 20px;
         line-height: 25px; }
