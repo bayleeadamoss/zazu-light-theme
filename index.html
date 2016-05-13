@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <title>Light Theme for Zazu</title>
+      <title>Dark Theme for Zazu</title>
       <link href="dist/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -24,7 +24,7 @@
             <h2>Chase</h2>
             <h3>Login to https://login.chase.net/login?r=0cc175b9c0f1b6a831c399e269772661187ef4436122d1cc2f40dc2b92f0eba0900150983cd24fb0d6963f7d28e17f72900150983cd24fb0d6963f7d28e17f72ab56b4d92b40713acc5af89985d4b786e80b5017098950fc58aad83c8c14978e0cc175b9c0f1b6a831c399e269772661187ef4436122d1cc2f40dc2b92f0eba0900150983cd24fb0d6963f7d28e17f72900150983cd24fb0d6963f7d28e17f72ab56b4d92b40713acc5af89985d4b786e80b5017098950fc58aad83c8c14978e0cc175b9c0f1b6a831c399e269772661187ef4436122d1cc2f40dc2b92f0eba0900150983cd24fb0d6963f7d28e17f72900150983cd24fb0d6963f7d28e17f72ab56b4d92b40713acc5af89985d4b786e80b5017098950fc58aad83c8c14978e</h3>
           </li>
-          <li>
+          <li class="photoshop">
             <img src="http://orig10.deviantart.net/bfa2/f/2014/166/9/1/adobe_photoshop_icon_v2_by_dudekpro-d7mg13s.png" />
             <h2>Adobe Photoshop CC 2015</h2>
             <h3>/Applications/Adobe CC 2015/Adobe Photoshop CC 2015.app</h3>
@@ -61,6 +61,12 @@
         border-radius: 10px;
         overflow: hidden;
       }
+      section.filtered li {
+        display: none;
+      }
+      section.filtered li.photoshop {
+        display: block;
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-2.2.3.min.js"
@@ -70,6 +76,13 @@
       jQuery('#zazu li').on('mouseenter', function() {
         jQuery('#zazu li.active').removeClass('active');
         jQuery(this).addClass('active');
+      });
+      jQuery('input').on('keyup', function() {
+        if (jQuery(this).val().length >= 1) {
+          jQuery('section').addClass('filtered');
+        } else {
+          jQuery('section').removeClass('filtered');
+        }
       });
     </script>
   </body>
