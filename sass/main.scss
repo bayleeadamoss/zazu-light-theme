@@ -9,7 +9,7 @@ html, body {
 
 section {
   background-color: darken($main, 5%);
-  background-image: data-uri('../images/feather.png');
+  background-image: inline-image('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
