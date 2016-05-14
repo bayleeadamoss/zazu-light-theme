@@ -1,6 +1,6 @@
-## Dark Theme
+## Light Theme
 
-A dark theme example written in LESS with node/gulp.
+A dark theme example written in SASS with node/gulp.
 
 [View a demo](http://tinytacoteam.github.io/theme-playbook/#tinytacoteam/light-theme)
 
@@ -8,12 +8,12 @@ A dark theme example written in LESS with node/gulp.
 
 ## Installing
 
-Mark `tinytacoteam/dark-theme` inside of your `~/.zazurc.js` file.
+Mark `tinytacoteam/light-theme` inside of your `~/.zazurc.js` file.
 
 ~~~ javascript
 module.exports = {
   // ...
-  'theme': 'tinytacoteam/dark-theme',
+  'theme': 'tinytacoteam/light-theme',
   // ...
 }
 ~~~
