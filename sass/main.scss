@@ -27,54 +27,73 @@ section#zazu {
     cursor: auto;
   }
 
-  ul {
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid darken($main, 10%);
-    max-height: 333px;
-    overflow: scroll;
+  iframe#preview {
+    border: 0;
+  }
 
-    li {
-      display: block;
-      height: 45px;
-      line-height: 45px;
-      border-bottom: 1px solid darken($main, 10%);
-      -webkit-app-region: no-drag;
-      cursor: pointer;
+  div.results {
+    display: flex;
+    flex-direction: row;
 
-      img {
-        height: 30px;
-        width: 30px;
-        margin: 7.5px;
-        float: left;
+    ul {
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid darken($main, 10%);
+      max-height: 333px;
+      overflow: hidden;
+      width: 50%;
+
+      &:last-child {
+        width: 100%;
       }
 
-      h2, h3 {
-        margin: 0;
-        padding-left: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: 400;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      + div {
+        width: 50%;
       }
 
-      h2 {
-        font-size: 20px;
-        line-height: 25px;
-        &:last-child {
-          font-size: 20px;
-          line-height: 45px;
+      li {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1px solid darken($main, 10%);
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        width: 100%;
+
+        img {
+          height: 30px;
+          width: 30px;
+          margin: 7.5px;
+          float: left;
         }
-      }
 
-      h3 {
-        font-size: 15px;
-        line-height: 15px;
-      }
+        h2, h3 {
+          margin: 0;
+          padding-left: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: 400;
+          font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
 
-      &.active {
-        background-color: darken($main, 10%);
+        h2 {
+          font-size: 20px;
+          line-height: 25px;
+          &:last-child {
+            font-size: 20px;
+            line-height: 45px;
+          }
+        }
+
+        h3 {
+          font-size: 15px;
+          line-height: 15px;
+        }
+
+        &.active {
+          background-color: darken($main, 10%);
+        }
       }
     }
   }
