@@ -2,19 +2,17 @@
 
 A dark theme example written in SASS with node/gulp.
 
-[View a demo](http://tinytacoteam.github.io/theme-playbook/#tinytacoteam/light-theme)
+[View a demo](https://tinytacoteam.github.io/zazu-theme-playbook/#tinytacoteam/zazu-light-theme)
 
 ![Screenshot](./images/screenshot.png)
 
 ## Installing
 
-Mark `tinytacoteam/light-theme` inside of your `~/.zazurc.js` file.
+Mark `tinytacoteam/zazu-light-theme` inside of your `~/.zazurc.js` file.
 
 ~~~ javascript
 module.exports = {
-  // ...
-  'theme': 'tinytacoteam/light-theme',
-  // ...
+  'theme': 'tinytacoteam/zazu-light-theme',
 }
 ~~~
 
