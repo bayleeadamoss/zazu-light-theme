@@ -60,7 +60,9 @@ section#zazu {
         cursor: pointer;
         width: 100%;
 
-        img {
+        .icon {
+          text-align: center;
+          line-height: 30px;
           height: 30px;
           width: 30px;
           margin: 7.5px;
