@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'Dark Theme',
+  name: 'Light Theme',
   version: '1.0.0',
   author: 'blainesch',
-  description: 'A basic dark theme for Zazu',
+  description: 'A basic light theme for Zazu',
   stylesheet: 'dist/main.css'
 }

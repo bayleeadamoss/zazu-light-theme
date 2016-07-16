@@ -1,6 +1,6 @@
 ## Light Theme
 
-A dark theme example written in SASS with node/gulp.
+A light theme example written in SASS with node/gulp.
 
 [View a demo](https://tinytacoteam.github.io/zazu-theme-playbook/#tinytacoteam/zazu-light-theme)
 
