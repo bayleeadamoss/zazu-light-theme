@@ -71,5 +71,5 @@ section#zazu {
         section#zazu div.results ul li h3 {
           font-size: 15px;
           line-height: 15px; }
-        section#zazu div.results ul li.active {
-          background-color: rgba(222, 222, 222, 0.9); }
+        section#zazu div.results ul li.active, section#zazu div.results ul li:hover {
+          background-color: rgba(189, 160, 203, 0.9); }

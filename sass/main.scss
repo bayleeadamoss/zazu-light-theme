@@ -1,4 +1,5 @@
 $main: #F7F7F7;
+$secondary: #BDA0CB;
 $transparency: 0.1;
 
 html, body {
@@ -97,8 +98,8 @@ section#zazu {
           line-height: 15px;
         }
 
-        &.active {
-          background-color: transparentize(darken($main, 10%), $transparency);
+        &.active, &:hover {
+          background-color: transparentize($secondary, $transparency);
         }
       }
     }
