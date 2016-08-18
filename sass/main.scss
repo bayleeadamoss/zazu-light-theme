@@ -98,8 +98,12 @@ section#zazu {
           line-height: 15px;
         }
 
-        &.active, &:hover {
+        &.active {
           background-color: transparentize($secondary, $transparency);
+        }
+
+        &:hover {
+          background-color: transparentize(lighten($secondary, 10%), $transparency);
         }
       }
     }
