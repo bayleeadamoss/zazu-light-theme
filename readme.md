@@ -8,11 +8,11 @@ A light theme example written in SASS with node/gulp.
 
 ## Installing
 
-Mark `tinytacoteam/zazu-light-theme` inside of your `~/.zazurc.js` file.
+Mark `tinytacoteam/zazu-light-theme` inside of your `~/.zazurc.json` file.
 
-~~~ javascript
-module.exports = {
-  'theme': 'tinytacoteam/zazu-light-theme',
+~~~ json
+{
+  "theme": "tinytacoteam/zazu-light-theme"
 }
 ~~~
 
