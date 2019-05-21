@@ -4,6 +4,12 @@ html, body {
   font-size: 20px;
   overflow: hidden; }
 
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
+
 body.playbook {
   background-color: #F7F7F7; }
 
