@@ -1,12 +1,17 @@
 $main: #F7F7F7;
 $secondary: #BDA0CB;
-$transparency: 0.1;
+$transparency: 0.8;
 
 html, body {
   margin: 0;
   padding: 0;
   font-size: 20px;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 body.playbook {
